@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_topic_and_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textColor="#3e3b3b"
+            android:textSize="20sp"
+            android:id="@+id/tv_title_topic_and_category"
+            android:text="CHỦ ĐỀ VÀ THỂ LOẠI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_view_more_topic"
+            android:textColor="#913677"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:textSize="15sp"
+            android:text="Xem Thêm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:scrollbars="none"
+        android:id="@+id/horizontalScrollView"
+        android:layout_below="@id/rl_topic_and_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </HorizontalScrollView>
+</RelativeLayout>

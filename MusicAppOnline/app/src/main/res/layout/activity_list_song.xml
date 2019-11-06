@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/coordinator_list_song"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Activity.ListSongActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout_list_song"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            app:expandedTitleGravity="center|bottom"
+            app:expandedTitleMarginBottom="33dp"
+            android:background="@mipmap/ic_launcher"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            android:id="@+id/collapsToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <View
+                android:background="@drawable/custom_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <android.support.v7.widget.Toolbar
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                android:elevation="6dp"
+                android:id="@+id/toolbar_list"
+                app:layout_collapseMode="pin"
+                android:layout_width="match_parent"
+                android:layout_height="75dp">
+
+            </android.support.v7.widget.Toolbar>
+            <ImageView
+                android:elevation="6dp"
+                android:scaleType="fitXY"
+                android:layout_marginTop="38dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_marginBottom="50dp"
+                android:layout_gravity="center"
+                android:layout_width="150dp"
+                android:id="@+id/iv_list_song"
+                android:layout_height="150dp" />
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="normal"
+        android:src="@drawable/iconfloatingactionbutton"
+        android:scaleType="fitXY"
+        android:backgroundTint="#a845de"
+        app:layout_anchorGravity="center|bottom"
+        app:layout_anchor="@id/appBarLayout_list_song"
+        app:layout_behavior="@string/bottom_sheet_behavior" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:paddingTop="30dp"
+        android:layout_width="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_list_song"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:fillViewport="true">
+    <LinearLayout
+        android:id="@+id/linear_main"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <fragment
+            android:name="com.example.musicapponline.Fragment.FragmentBanner"
+            android:id="@+id/frag_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <fragment
+            android:name="com.example.musicapponline.Fragment.FragmentPlaylist"
+            android:id="@+id/frag_playlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <fragment
+            android:name="com.example.musicapponline.Fragment.FragmentTopicAndCategory"
+            android:id="@+id/frag_topic_and_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <fragment
+            android:name="com.example.musicapponline.Fragment.FragmentAlbum"
+            android:id="@+id/frag_album"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <fragment
+            android:name="com.example.musicapponline.Fragment.FragmentPopularSong"
+            android:id="@+id/frag_popular_song"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>

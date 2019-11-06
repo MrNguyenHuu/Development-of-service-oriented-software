@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@mipmap/ic_launcher_round"
+            android:scaleType="fitXY"
+            android:id="@+id/iv_list_category_item"
+            android:layout_width="170dp"
+            android:layout_height="170dp" />
+        <TextView
+            android:textColor="#1D1C1C"
+            android:text="Ten the loai"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="15sp"
+            android:maxWidth="150dp"
+            android:id="@+id/tv_name_category_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="13sp"
+            android:text="Various Artists"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="5dp">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_list_playlist"
+            android:scaleType="fitXY"
+            android:layout_width="180dp"
+            android:layout_height="180dp" />
+    </FrameLayout>
+    <TextView
+        android:textColor="#060606"
+        android:textSize="15sp"
+        android:text="123123"
+        android:id="@+id/tv_list_playlist_item_name"
+        android:maxWidth="200dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textSize="13sp"
+        android:text="Various Artists"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
